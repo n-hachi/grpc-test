@@ -52,6 +52,7 @@ RUN bash -xc "\
     mkdir -p cmake/build; \
     pushd cmake/build; \
     cmake ../..; \
+    make; \
     "
 
 RUN /bin/bash
