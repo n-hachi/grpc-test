@@ -54,5 +54,8 @@ RUN bash -xc "\
     cmake ../..; \
     make; \
     "
+RUN cp grpc/examples/cpp/route_guide/route_guide_db.json /user
+RUN cp grpc/examples/cpp/route_guide/cmake/build/route_guide_server /user
+RUN cp grpc/examples/cpp/route_guide/cmake/build/route_guide_client /user
 
-RUN /bin/bash
+CMD /bin/bash
